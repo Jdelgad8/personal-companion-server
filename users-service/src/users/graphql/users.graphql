@@ -1,0 +1,25 @@
+scalar Date
+
+enum UserType {
+  ADMIN
+  USER
+}
+
+type User @key(fields: "id") {
+  id: ID!
+  createdAt: Date!
+  updatedAt: Date!
+
+  username: String!
+  email: String!
+  firstName: String!
+  lastName: String!
+  birthday: Date!
+  phone: String!
+  profileImage: String
+  type: UserType!
+}
+
+extend type Query {
+  getUser(id: ID!): User
+}
