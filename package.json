@@ -1,0 +1,23 @@
+{
+  "name": "personal-companion-server",
+  "version": "1.0.0",
+  "description": "Personal companion app that wants to make you life easier",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jdelgad8/personal-companion-server.git"
+  },
+  "keywords": [
+    "companion",
+    "personal"
+  ],
+  "author": "Jdelgad8",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jdelgad8/personal-companion-server/issues"
+  },
+  "homepage": "https://github.com/Jdelgad8/personal-companion-server#readme"
+}
