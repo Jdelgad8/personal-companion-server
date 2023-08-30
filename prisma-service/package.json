@@ -1,5 +1,5 @@
 {
-  "name": "personal-companion-server-prisma-service",
+  "name": "@personal-companion-server/prisma-service",
   "version": "1.0.0",
   "description": "Prisma service for personal companion server",
   "main": "index.js",
@@ -58,6 +58,7 @@
     "@types/supertest": "^2.0.12",
     "@typescript-eslint/eslint-plugin": "^6.5.0",
     "@typescript-eslint/parser": "^6.5.0",
+    "dotenv-cli": "^7.3.0",
     "eslint": "^8.48.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
@@ -90,5 +91,9 @@
   },
   "prisma": {
     "seed": "ts-node prisma/seed.ts"
+  },
+  "postinstall": "tsc && cp src/index.d.ts dist/index.d.ts && npx prisma@5.2.0 generate",
+  "publishConfig": {
+    "@Jdelgad8:registry": "https://npm.pkg.github.com"
   }
 }
