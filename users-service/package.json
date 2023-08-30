@@ -1,7 +1,7 @@
 {
-  "name": "personal-companion-server",
+  "name": "personal-companion-server-users",
   "version": "1.0.0",
-  "description": "Personal companion app that wants to make you life easier",
+  "description": "Users service for personal companion server",
   "main": "index.js",
   "repository": {
     "type": "git",
