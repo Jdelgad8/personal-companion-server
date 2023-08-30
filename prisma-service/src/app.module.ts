@@ -14,5 +14,6 @@ import { PrismaResolver } from './resolvers/prisma.resolver';
     }),
   ],
   providers: [PrismaService, PrismaResolver],
+  exports: [PrismaService],
 })
 export class AppModule {}
