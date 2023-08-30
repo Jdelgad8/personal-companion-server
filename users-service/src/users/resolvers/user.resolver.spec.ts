@@ -38,4 +38,14 @@ describe('UserResolver', () => {
   it('should be defined', () => {
     expect(resolver).toBeDefined();
   });
+
+  it('should query a user by its id', () => {
+    const result = resolver.getUser('1');
+    expect(result.id).toEqual('1');
+  });
+
+  it('should resolve a reference', () => {
+    const result = resolver.ResolveReference({ __typename: 'User', id: '1' });
+    expect(result.id).toEqual('1');
+  });
 });
